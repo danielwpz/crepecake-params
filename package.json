@@ -1,0 +1,18 @@
+{
+  "name": "crepecake-params",
+  "version": "1.0.0",
+  "description": "Params schema validation middleware for crepecake",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Wang",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "crepecake": "^1.1.1"
+  },
+  "peerDependencies": {
+    "crepecake": "1.x"
+  }
+}
