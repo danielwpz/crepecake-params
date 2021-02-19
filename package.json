@@ -1,6 +1,6 @@
 {
   "name": "crepecake-params",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Params schema validation middleware for Crepecake, based on Yup",
   "main": "dist/index.js",
   "scripts": {
