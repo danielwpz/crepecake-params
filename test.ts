@@ -43,6 +43,7 @@ class FooController {
 }
 
 describe('Crepecake Params Test', () => {
+  let server: any
   let request: supertest.SuperTest<supertest.Test>
 
   before(async () => {
@@ -57,8 +58,12 @@ describe('Crepecake Params Test', () => {
     app.use(CrepecakeCommon())
     app.use(router)
 
-    const server = app.listen()
+    server = app.listen()
     request = supertest(server)
+  })
+
+  after(() => {
+    server.close()
   })
 
   describe('GET query params', () => {
